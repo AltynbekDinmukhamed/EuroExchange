@@ -201,7 +201,8 @@ class RegistrationController: UIViewController {
     
     //MARK: -objc functions-
     @objc func nextButtonTapped(_ sender: UIButton) {
-        
+        let vc = LoginViewContorller()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

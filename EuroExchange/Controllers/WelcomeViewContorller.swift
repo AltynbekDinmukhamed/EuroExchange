@@ -132,8 +132,7 @@ class WelcomeViewContorller: UIViewController {
     
     //objc functions
     @objc func accIDButtonTapped(_ sender: UIButton) {
-        let register = RegistrationController()
-        navigationController?.pushViewController(register, animated: true)
+        
     }
     
     @objc func towFAbuttonTapped(_ sender: UIButton) {
@@ -141,7 +140,8 @@ class WelcomeViewContorller: UIViewController {
     }
     
     @objc func nextButtonTapped(_ sender: UIButton) {
-        
+        let register = RegistrationController()
+        navigationController?.pushViewController(register, animated: true)
     }
     
 }

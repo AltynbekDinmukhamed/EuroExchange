@@ -32,6 +32,11 @@
 		56A62C192A607B9F003803DF /* PlusJakartaSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56A62C072A607B9F003803DF /* PlusJakartaSans-BoldItalic.ttf */; };
 		56A62C1C2A607B9F003803DF /* PlusJakartaSans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56A62C0A2A607B9F003803DF /* PlusJakartaSans-VariableFont_wght.ttf */; };
 		56A62C1E2A63C87D003803DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62C1D2A63C87D003803DF /* LoginViewController.swift */; };
+		56A62C202A63F444003803DF /* LoginAndEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62C1F2A63F444003803DF /* LoginAndEmailViewController.swift */; };
+		56A62C222A63F4F3003803DF /* PasswordChangedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62C212A63F4F3003803DF /* PasswordChangedViewController.swift */; };
+		56A62C242A642A3D003803DF /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62C232A642A3D003803DF /* CreateAccountViewController.swift */; };
+		56A62C262A642C63003803DF /* PassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62C252A642C63003803DF /* PassViewController.swift */; };
+		56A62C292A642F67003803DF /* WecomePageViewCobtroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62C282A642F67003803DF /* WecomePageViewCobtroller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +67,11 @@
 		56A62C072A607B9F003803DF /* PlusJakartaSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		56A62C0A2A607B9F003803DF /* PlusJakartaSans-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		56A62C1D2A63C87D003803DF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		56A62C1F2A63F444003803DF /* LoginAndEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndEmailViewController.swift; sourceTree = "<group>"; };
+		56A62C212A63F4F3003803DF /* PasswordChangedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChangedViewController.swift; sourceTree = "<group>"; };
+		56A62C232A642A3D003803DF /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		56A62C252A642C63003803DF /* PassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassViewController.swift; sourceTree = "<group>"; };
+		56A62C282A642F67003803DF /* WecomePageViewCobtroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WecomePageViewCobtroller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +116,13 @@
 		564D64A92A5F1ACD007DF726 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				56A62C272A642F4C003803DF /* PageViewController */,
 				56A62BF32A607593003803DF /* AuthenticationControllers */,
 				564D64992A5F1A57007DF726 /* WelcomeViewContorller.swift */,
+				56A62C1F2A63F444003803DF /* LoginAndEmailViewController.swift */,
+				56A62C212A63F4F3003803DF /* PasswordChangedViewController.swift */,
+				56A62C232A642A3D003803DF /* CreateAccountViewController.swift */,
+				56A62C252A642C63003803DF /* PassViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -170,6 +185,14 @@
 				56A62C0A2A607B9F003803DF /* PlusJakartaSans-VariableFont_wght.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		56A62C272A642F4C003803DF /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				56A62C282A642F67003803DF /* WecomePageViewCobtroller.swift */,
+			);
+			path = PageViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,12 +281,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56A62C242A642A3D003803DF /* CreateAccountViewController.swift in Sources */,
 				56A62C1E2A63C87D003803DF /* LoginViewController.swift in Sources */,
 				564D649A2A5F1A57007DF726 /* WelcomeViewContorller.swift in Sources */,
 				56A62BF02A5F2990003803DF /* gradiantButton.swift in Sources */,
 				564D64962A5F1A57007DF726 /* AppDelegate.swift in Sources */,
+				56A62C292A642F67003803DF /* WecomePageViewCobtroller.swift in Sources */,
 				56A62BF22A606115003803DF /* GradiantColorExtensions.swift in Sources */,
+				56A62C262A642C63003803DF /* PassViewController.swift in Sources */,
+				56A62C202A63F444003803DF /* LoginAndEmailViewController.swift in Sources */,
 				56A62BF52A6075AB003803DF /* RegistrationController.swift in Sources */,
+				56A62C222A63F4F3003803DF /* PasswordChangedViewController.swift in Sources */,
 				564D64982A5F1A57007DF726 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
