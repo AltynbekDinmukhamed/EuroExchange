@@ -12,7 +12,7 @@
 		564D649A2A5F1A57007DF726 /* WelcomeViewContorller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564D64992A5F1A57007DF726 /* WelcomeViewContorller.swift */; };
 		564D649F2A5F1A58007DF726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 564D649E2A5F1A58007DF726 /* Assets.xcassets */; };
 		564D64A22A5F1A58007DF726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 564D64A02A5F1A58007DF726 /* LaunchScreen.storyboard */; };
-		56A62BF02A5F2990003803DF /* gradiantButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62BEF2A5F2990003803DF /* gradiantButton.swift */; };
+		56A62BF02A5F2990003803DF /* gradiantExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62BEF2A5F2990003803DF /* gradiantExtension.swift */; };
 		56A62BF22A606115003803DF /* GradiantColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62BF12A606115003803DF /* GradiantColorExtensions.swift */; };
 		56A62BF52A6075AB003803DF /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62BF42A6075AB003803DF /* RegistrationController.swift */; };
 		56A62C0B2A607B9F003803DF /* PlusJakartaSans-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56A62BF82A607B9F003803DF /* PlusJakartaSans-Italic-VariableFont_wght.ttf */; };
@@ -43,6 +43,12 @@
 		56A62C312A7536F8003803DF /* CheckBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62C302A7536F8003803DF /* CheckBoxButton.swift */; };
 		56A62C332A754D0B003803DF /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62C322A754D0B003803DF /* LoadingViewController.swift */; };
 		56A62C362A7632B9003803DF /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62C352A7632B9003803DF /* ErrorViewController.swift */; };
+		56A62C3A2A763B88003803DF /* MainToolBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62C392A763B88003803DF /* MainToolBarViewController.swift */; };
+		56A62C3D2A764D10003803DF /* AddNewCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62C3C2A764D10003803DF /* AddNewCardViewController.swift */; };
+		56A62C402A76697A003803DF /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62C3F2A76697A003803DF /* CardView.swift */; };
+		56A62C482A769951003803DF /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56A62C462A769951003803DF /* Poppins-SemiBold.ttf */; };
+		56A62C492A769951003803DF /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56A62C472A769951003803DF /* Poppins-Medium.ttf */; };
+		56A62C4B2A769C67003803DF /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56A62C4A2A769C67003803DF /* Poppins-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +59,7 @@
 		564D649E2A5F1A58007DF726 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		564D64A12A5F1A58007DF726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		564D64A32A5F1A58007DF726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		56A62BEF2A5F2990003803DF /* gradiantButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gradiantButton.swift; sourceTree = "<group>"; };
+		56A62BEF2A5F2990003803DF /* gradiantExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gradiantExtension.swift; sourceTree = "<group>"; };
 		56A62BF12A606115003803DF /* GradiantColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradiantColorExtensions.swift; sourceTree = "<group>"; };
 		56A62BF42A6075AB003803DF /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		56A62BF82A607B9F003803DF /* PlusJakartaSans-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
@@ -84,6 +90,12 @@
 		56A62C302A7536F8003803DF /* CheckBoxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxButton.swift; sourceTree = "<group>"; };
 		56A62C322A754D0B003803DF /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		56A62C352A7632B9003803DF /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		56A62C392A763B88003803DF /* MainToolBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainToolBarViewController.swift; sourceTree = "<group>"; };
+		56A62C3C2A764D10003803DF /* AddNewCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCardViewController.swift; sourceTree = "<group>"; };
+		56A62C3F2A76697A003803DF /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		56A62C462A769951003803DF /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		56A62C472A769951003803DF /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		56A62C4A2A769C67003803DF /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +128,7 @@
 		564D64942A5F1A57007DF726 /* EuroExchange */ = {
 			isa = PBXGroup;
 			children = (
+				56A62C3E2A76696D003803DF /* Views */,
 				56A62BEE2A5F297A003803DF /* Extension */,
 				564D64AA2A5F1AD9007DF726 /* other */,
 				564D64A92A5F1ACD007DF726 /* Controllers */,
@@ -128,6 +141,8 @@
 		564D64A92A5F1ACD007DF726 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				56A62C3B2A764CF4003803DF /* CardViewControllers */,
+				56A62C382A763B65003803DF /* MainViewControllers */,
 				56A62C272A642F4C003803DF /* PageViewController */,
 				56A62BF32A607593003803DF /* AuthenticationControllers */,
 				56A62C342A763189003803DF /* WelcomeControllers */,
@@ -158,7 +173,7 @@
 		56A62BEE2A5F297A003803DF /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				56A62BEF2A5F2990003803DF /* gradiantButton.swift */,
+				56A62BEF2A5F2990003803DF /* gradiantExtension.swift */,
 				56A62BF12A606115003803DF /* GradiantColorExtensions.swift */,
 				56A62C2E2A72600E003803DF /* PaddingLabel.swift */,
 				56A62C302A7536F8003803DF /* CheckBoxButton.swift */,
@@ -193,6 +208,9 @@
 				56A62C052A607B9F003803DF /* PlusJakartaSans-ExtraBold.ttf */,
 				56A62C062A607B9F003803DF /* PlusJakartaSans-Italic.ttf */,
 				56A62C072A607B9F003803DF /* PlusJakartaSans-BoldItalic.ttf */,
+				56A62C472A769951003803DF /* Poppins-Medium.ttf */,
+				56A62C462A769951003803DF /* Poppins-SemiBold.ttf */,
+				56A62C4A2A769C67003803DF /* Poppins-Regular.ttf */,
 				56A62C0A2A607B9F003803DF /* PlusJakartaSans-VariableFont_wght.ttf */,
 			);
 			path = Fonts;
@@ -219,6 +237,30 @@
 				56A62C322A754D0B003803DF /* LoadingViewController.swift */,
 			);
 			path = WelcomeControllers;
+			sourceTree = "<group>";
+		};
+		56A62C382A763B65003803DF /* MainViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				56A62C392A763B88003803DF /* MainToolBarViewController.swift */,
+			);
+			path = MainViewControllers;
+			sourceTree = "<group>";
+		};
+		56A62C3B2A764CF4003803DF /* CardViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				56A62C3C2A764D10003803DF /* AddNewCardViewController.swift */,
+			);
+			path = CardViewControllers;
+			sourceTree = "<group>";
+		};
+		56A62C3E2A76696D003803DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				56A62C3F2A76697A003803DF /* CardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,9 +326,12 @@
 				56A62C122A607B9F003803DF /* PlusJakartaSans-ExtraLightItalic.ttf in Resources */,
 				56A62C0F2A607B9F003803DF /* PlusJakartaSans-ExtraBoldItalic.ttf in Resources */,
 				56A62C162A607B9F003803DF /* PlusJakartaSans-ExtraLight.ttf in Resources */,
+				56A62C482A769951003803DF /* Poppins-SemiBold.ttf in Resources */,
 				564D64A22A5F1A58007DF726 /* LaunchScreen.storyboard in Resources */,
 				56A62C0E2A607B9F003803DF /* PlusJakartaSans-Medium.ttf in Resources */,
 				56A62C102A607B9F003803DF /* PlusJakartaSans-SemiBold.ttf in Resources */,
+				56A62C4B2A769C67003803DF /* Poppins-Regular.ttf in Resources */,
+				56A62C492A769951003803DF /* Poppins-Medium.ttf in Resources */,
 				56A62C172A607B9F003803DF /* PlusJakartaSans-ExtraBold.ttf in Resources */,
 				56A62C152A607B9F003803DF /* PlusJakartaSans-Bold.ttf in Resources */,
 				56A62C142A607B9F003803DF /* PlusJakartaSans-LightItalic.ttf in Resources */,
@@ -312,12 +357,15 @@
 				56A62C332A754D0B003803DF /* LoadingViewController.swift in Sources */,
 				564D649A2A5F1A57007DF726 /* WelcomeViewContorller.swift in Sources */,
 				56A62C2B2A72598F003803DF /* WelcomeToExchangeViewController.swift in Sources */,
-				56A62BF02A5F2990003803DF /* gradiantButton.swift in Sources */,
+				56A62C3D2A764D10003803DF /* AddNewCardViewController.swift in Sources */,
+				56A62BF02A5F2990003803DF /* gradiantExtension.swift in Sources */,
+				56A62C402A76697A003803DF /* CardView.swift in Sources */,
 				564D64962A5F1A57007DF726 /* AppDelegate.swift in Sources */,
 				56A62C362A7632B9003803DF /* ErrorViewController.swift in Sources */,
 				56A62C2F2A72600E003803DF /* PaddingLabel.swift in Sources */,
 				56A62C292A642F67003803DF /* WecomePageViewCobtroller.swift in Sources */,
 				56A62BF22A606115003803DF /* GradiantColorExtensions.swift in Sources */,
+				56A62C3A2A763B88003803DF /* MainToolBarViewController.swift in Sources */,
 				56A62C262A642C63003803DF /* PassViewController.swift in Sources */,
 				56A62C202A63F444003803DF /* LoginAndEmailViewController.swift in Sources */,
 				56A62BF52A6075AB003803DF /* RegistrationController.swift in Sources */,

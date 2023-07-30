@@ -37,3 +37,13 @@ extension UIImage {
     }
 }
 
+extension UIView {
+    func applyCardGradiant(color: [CGColor]) {
+        let gradiant = CAGradientLayer()
+        gradiant.colors = color
+        gradiant.startPoint = CGPoint(x: 0, y: 0)
+        gradiant.endPoint = CGPoint(x: 1, y: 0)
+        gradiant.frame = bounds
+        layer.insertSublayer(gradiant, at: 0)
+    }
+}

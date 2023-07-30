@@ -67,7 +67,7 @@ class LoadingViewController: UIViewController {
     }
     
     private func timerStart() {
-        let timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(timerVcOpen), userInfo: nil, repeats: false)
+        let timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(timerVcOpen), userInfo: nil, repeats: false)
     }
     
     @objc func timerVcOpen(){

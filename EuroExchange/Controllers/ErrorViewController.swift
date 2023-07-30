@@ -38,6 +38,7 @@ class ErrorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpVews()
+        timerStart()
     }
     
     override func viewDidLayoutSubviews() {
@@ -66,5 +67,13 @@ class ErrorViewController: UIViewController {
             fixLbl.topAnchor.constraint(equalTo: opsLbl.bottomAnchor, constant: 10),
             fixLbl.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
+    }
+    private func timerStart() {
+        let timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(timerVcOpen), userInfo: nil, repeats: false)
+    }
+    
+    @objc func timerVcOpen(){
+        let vc = AddNewCardViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

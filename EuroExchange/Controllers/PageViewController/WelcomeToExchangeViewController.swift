@@ -119,6 +119,7 @@ class WelcomeToExchangeViewController: UIViewController {
     }
     
     @objc func continueButtonTapped(_ sender: UIButton) {
-        
+        let vc = TermsAndConditionsViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
