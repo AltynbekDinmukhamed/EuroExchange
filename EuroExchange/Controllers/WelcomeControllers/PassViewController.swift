@@ -141,6 +141,7 @@ class PassViewController: UIViewController {
     }
     
     @objc func nextButtonTapped(_ sender: UIButton) {
-        
+        let vc = WelcomePageViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

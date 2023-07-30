@@ -1,81 +1,70 @@
-////
-////  WecomePageViewCobtroller.swift
-////  EuroExchange
-////
-////  Created by Димаш Алтынбек on 16.07.2023.
-////
 //
-//import Foundation
-//import UIKit
+//  WecomePageViewCobtroller.swift
+//  EuroExchange
 //
-//class WelcomePageViewController: UIPageViewController {
-//    var pages = [UIViewController]()
-//    let pageControl = UIPageControl()
-//    let initialPage = 0
+//  Created by Димаш Алтынбек on 16.07.2023.
 //
-//    //MARK: -Life Cycle-
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        setUp()
-//        style()
-//        layout()
-//    }
-//
-//    private func setUp() {
-//        dataSource = self
-//        delegate = self
-//
-//        pageControl.addTarget(self, action: #selector(pageControlTapped), for: .valueChanged)
-//
-//        // create an array of viewController
-////        let page1 = ViewController1()
-////        let page2 = ViewController2()
-////        let page3 = ViewController3()
-////
-////        pages.append(page1)
-////        pages.append(page2)
-////        pages.append(page3)
-//
-//        // set initial viewController to be displayed
-//        // Note: We are not passing in all the viewControllers here. Only the one to be displayed.
-//        setViewControllers([pages[initialPage]], direction: .forward, animated: true, completion: nil)
-//    }
-//
-//    func style() {
-//            pageControl.translatesAutoresizingMaskIntoConstraints = false
-//            pageControl.currentPageIndicatorTintColor = .black
-//            pageControl.pageIndicatorTintColor = .systemGray2
-//            pageControl.numberOfPages = pages.count
-//            pageControl.currentPage = initialPage
-//    }
-//
-//    func layout() {
-//            view.addSubview(pageControl)
-//
-//            NSLayoutConstraint.activate([
-//                pageControl.widthAnchor.constraint(equalTo: view.widthAnchor),
-//                pageControl.heightAnchor.constraint(equalToConstant: 20),
-//                view.bottomAnchor.constraint(equalToSystemSpacingBelow: pageControl.bottomAnchor, multiplier: 1),
-//            ])
-//    }
-//
-//    @objc private func pageControlTapped(_ sender: UIPageViewController) {
-//
-//    }
-//}
-//
-//extension WelcomePageViewController: UIPageViewControllerDataSource{
-//    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-//        <#code#>
-//    }
-//
-//    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-//        <#code#>
-//    }
-//
-//
-//}
-//
-//extension WelcomePageViewController: UIPageViewControllerDelegate {
-//
-//}
+
+import Foundation
+import UIKit
+
+class WelcomePageViewController: UIViewController {
+    //MARK: -Variables-
+    var pageViewController: UIPageViewController!
+    
+    var viewControllers: [UIViewController] = {
+        let firstView = WelcomeToExchangeViewController()
+        let secoundViews = TermsAndConditionsViewController()
+        return [firstView, secoundViews]
+    }()
+    //MARK: -LifeCycleretr
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .white
+        navigationController?.isToolbarHidden = true
+        pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
+        pageViewController.setViewControllers([viewControllers[0]], direction: .forward, animated: true)
+        self.addChild(pageViewController)
+        view.addSubview(pageViewController.view)
+        pageViewController.view.frame = self.view.frame
+        pageViewController.didMove(toParent: self)
+        pageViewController.dataSource = self
+    }
+}
+
+extension WelcomePageViewController: UIPageViewControllerDataSource {
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        guard let index = viewControllers.firstIndex(of: viewController) else {
+            return nil
+        }
+        
+        let reducedIndex = index - 1
+        
+        guard reducedIndex >= 0 else {
+            return nil
+        }
+        guard viewControllers.count > reducedIndex else {
+            return nil
+        }
+        return viewControllers[reducedIndex]
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        guard let index = viewControllers.firstIndex(of: viewController) else {
+            return nil
+        }
+        
+        let increasedIndex = index + 1
+        
+        guard increasedIndex >= 0 else {
+            return nil
+        }
+        
+        guard viewControllers.count > increasedIndex else {
+            return nil
+        }
+        return viewControllers[increasedIndex]
+    }
+    
+}

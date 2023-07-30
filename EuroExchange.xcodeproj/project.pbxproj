@@ -37,6 +37,12 @@
 		56A62C242A642A3D003803DF /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62C232A642A3D003803DF /* CreateAccountViewController.swift */; };
 		56A62C262A642C63003803DF /* PassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62C252A642C63003803DF /* PassViewController.swift */; };
 		56A62C292A642F67003803DF /* WecomePageViewCobtroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62C282A642F67003803DF /* WecomePageViewCobtroller.swift */; };
+		56A62C2B2A72598F003803DF /* WelcomeToExchangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62C2A2A72598F003803DF /* WelcomeToExchangeViewController.swift */; };
+		56A62C2D2A725A73003803DF /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62C2C2A725A73003803DF /* TermsAndConditionsViewController.swift */; };
+		56A62C2F2A72600E003803DF /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62C2E2A72600E003803DF /* PaddingLabel.swift */; };
+		56A62C312A7536F8003803DF /* CheckBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62C302A7536F8003803DF /* CheckBoxButton.swift */; };
+		56A62C332A754D0B003803DF /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62C322A754D0B003803DF /* LoadingViewController.swift */; };
+		56A62C362A7632B9003803DF /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62C352A7632B9003803DF /* ErrorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +78,12 @@
 		56A62C232A642A3D003803DF /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		56A62C252A642C63003803DF /* PassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassViewController.swift; sourceTree = "<group>"; };
 		56A62C282A642F67003803DF /* WecomePageViewCobtroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WecomePageViewCobtroller.swift; sourceTree = "<group>"; };
+		56A62C2A2A72598F003803DF /* WelcomeToExchangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeToExchangeViewController.swift; sourceTree = "<group>"; };
+		56A62C2C2A725A73003803DF /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
+		56A62C2E2A72600E003803DF /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		56A62C302A7536F8003803DF /* CheckBoxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxButton.swift; sourceTree = "<group>"; };
+		56A62C322A754D0B003803DF /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		56A62C352A7632B9003803DF /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,11 +130,8 @@
 			children = (
 				56A62C272A642F4C003803DF /* PageViewController */,
 				56A62BF32A607593003803DF /* AuthenticationControllers */,
-				564D64992A5F1A57007DF726 /* WelcomeViewContorller.swift */,
-				56A62C1F2A63F444003803DF /* LoginAndEmailViewController.swift */,
-				56A62C212A63F4F3003803DF /* PasswordChangedViewController.swift */,
-				56A62C232A642A3D003803DF /* CreateAccountViewController.swift */,
-				56A62C252A642C63003803DF /* PassViewController.swift */,
+				56A62C342A763189003803DF /* WelcomeControllers */,
+				56A62C352A7632B9003803DF /* ErrorViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -151,6 +160,8 @@
 			children = (
 				56A62BEF2A5F2990003803DF /* gradiantButton.swift */,
 				56A62BF12A606115003803DF /* GradiantColorExtensions.swift */,
+				56A62C2E2A72600E003803DF /* PaddingLabel.swift */,
+				56A62C302A7536F8003803DF /* CheckBoxButton.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -191,8 +202,23 @@
 			isa = PBXGroup;
 			children = (
 				56A62C282A642F67003803DF /* WecomePageViewCobtroller.swift */,
+				56A62C2A2A72598F003803DF /* WelcomeToExchangeViewController.swift */,
+				56A62C2C2A725A73003803DF /* TermsAndConditionsViewController.swift */,
 			);
 			path = PageViewController;
+			sourceTree = "<group>";
+		};
+		56A62C342A763189003803DF /* WelcomeControllers */ = {
+			isa = PBXGroup;
+			children = (
+				564D64992A5F1A57007DF726 /* WelcomeViewContorller.swift */,
+				56A62C1F2A63F444003803DF /* LoginAndEmailViewController.swift */,
+				56A62C212A63F4F3003803DF /* PasswordChangedViewController.swift */,
+				56A62C232A642A3D003803DF /* CreateAccountViewController.swift */,
+				56A62C252A642C63003803DF /* PassViewController.swift */,
+				56A62C322A754D0B003803DF /* LoadingViewController.swift */,
+			);
+			path = WelcomeControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,16 +309,22 @@
 			files = (
 				56A62C242A642A3D003803DF /* CreateAccountViewController.swift in Sources */,
 				56A62C1E2A63C87D003803DF /* LoginViewController.swift in Sources */,
+				56A62C332A754D0B003803DF /* LoadingViewController.swift in Sources */,
 				564D649A2A5F1A57007DF726 /* WelcomeViewContorller.swift in Sources */,
+				56A62C2B2A72598F003803DF /* WelcomeToExchangeViewController.swift in Sources */,
 				56A62BF02A5F2990003803DF /* gradiantButton.swift in Sources */,
 				564D64962A5F1A57007DF726 /* AppDelegate.swift in Sources */,
+				56A62C362A7632B9003803DF /* ErrorViewController.swift in Sources */,
+				56A62C2F2A72600E003803DF /* PaddingLabel.swift in Sources */,
 				56A62C292A642F67003803DF /* WecomePageViewCobtroller.swift in Sources */,
 				56A62BF22A606115003803DF /* GradiantColorExtensions.swift in Sources */,
 				56A62C262A642C63003803DF /* PassViewController.swift in Sources */,
 				56A62C202A63F444003803DF /* LoginAndEmailViewController.swift in Sources */,
 				56A62BF52A6075AB003803DF /* RegistrationController.swift in Sources */,
 				56A62C222A63F4F3003803DF /* PasswordChangedViewController.swift in Sources */,
+				56A62C2D2A725A73003803DF /* TermsAndConditionsViewController.swift in Sources */,
 				564D64982A5F1A57007DF726 /* SceneDelegate.swift in Sources */,
+				56A62C312A7536F8003803DF /* CheckBoxButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
