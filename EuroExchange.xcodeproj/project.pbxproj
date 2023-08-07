@@ -15,6 +15,8 @@
 		564D649F2A5F1A58007DF726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 564D649E2A5F1A58007DF726 /* Assets.xcassets */; };
 		564D64A22A5F1A58007DF726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 564D64A02A5F1A58007DF726 /* LaunchScreen.storyboard */; };
 		56A1063D2A8171580076FA99 /* CardInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A1063C2A8171580076FA99 /* CardInfoViewController.swift */; };
+		56A1063F2A8173930076FA99 /* CardInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A1063E2A8173930076FA99 /* CardInfoView.swift */; };
+		56A106412A817B060076FA99 /* RecentTransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A106402A817B060076FA99 /* RecentTransactionTableViewCell.swift */; };
 		56A62BF02A5F2990003803DF /* gradiantExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62BEF2A5F2990003803DF /* gradiantExtension.swift */; };
 		56A62BF22A606115003803DF /* GradiantColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62BF12A606115003803DF /* GradiantColorExtensions.swift */; };
 		56A62BF52A6075AB003803DF /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62BF42A6075AB003803DF /* RegistrationController.swift */; };
@@ -65,6 +67,8 @@
 		564D64A12A5F1A58007DF726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		564D64A32A5F1A58007DF726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56A1063C2A8171580076FA99 /* CardInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfoViewController.swift; sourceTree = "<group>"; };
+		56A1063E2A8173930076FA99 /* CardInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfoView.swift; sourceTree = "<group>"; };
+		56A106402A817B060076FA99 /* RecentTransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionTableViewCell.swift; sourceTree = "<group>"; };
 		56A62BEF2A5F2990003803DF /* gradiantExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gradiantExtension.swift; sourceTree = "<group>"; };
 		56A62BF12A606115003803DF /* GradiantColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradiantColorExtensions.swift; sourceTree = "<group>"; };
 		56A62BF42A6075AB003803DF /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
@@ -268,6 +272,8 @@
 			children = (
 				56A62C3F2A76697A003803DF /* CardView.swift */,
 				561741E72A7F956200A236A9 /* ExchangeCurrencyView.swift */,
+				56A1063E2A8173930076FA99 /* CardInfoView.swift */,
+				56A106402A817B060076FA99 /* RecentTransactionTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -365,6 +371,7 @@
 				56A62C1E2A63C87D003803DF /* LoginViewController.swift in Sources */,
 				56A62C332A754D0B003803DF /* LoadingViewController.swift in Sources */,
 				564D649A2A5F1A57007DF726 /* WelcomeViewContorller.swift in Sources */,
+				56A1063F2A8173930076FA99 /* CardInfoView.swift in Sources */,
 				56A62C2B2A72598F003803DF /* WelcomeToExchangeViewController.swift in Sources */,
 				56A62C3D2A764D10003803DF /* AddNewCardViewController.swift in Sources */,
 				561741E82A7F956200A236A9 /* ExchangeCurrencyView.swift in Sources */,
@@ -379,6 +386,7 @@
 				56A62C3A2A763B88003803DF /* MainToolBarViewController.swift in Sources */,
 				56A62C262A642C63003803DF /* PassViewController.swift in Sources */,
 				56A62C202A63F444003803DF /* LoginAndEmailViewController.swift in Sources */,
+				56A106412A817B060076FA99 /* RecentTransactionTableViewCell.swift in Sources */,
 				56A62BF52A6075AB003803DF /* RegistrationController.swift in Sources */,
 				56A62C222A63F4F3003803DF /* PasswordChangedViewController.swift in Sources */,
 				56A1063D2A8171580076FA99 /* CardInfoViewController.swift in Sources */,
