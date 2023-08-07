@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		561741E62A7F72CA00A236A9 /* ExchangeCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561741E52A7F72CA00A236A9 /* ExchangeCurrency.swift */; };
+		561741E82A7F956200A236A9 /* ExchangeCurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561741E72A7F956200A236A9 /* ExchangeCurrencyView.swift */; };
 		564D64962A5F1A57007DF726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564D64952A5F1A57007DF726 /* AppDelegate.swift */; };
 		564D64982A5F1A57007DF726 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564D64972A5F1A57007DF726 /* SceneDelegate.swift */; };
 		564D649A2A5F1A57007DF726 /* WelcomeViewContorller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564D64992A5F1A57007DF726 /* WelcomeViewContorller.swift */; };
 		564D649F2A5F1A58007DF726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 564D649E2A5F1A58007DF726 /* Assets.xcassets */; };
 		564D64A22A5F1A58007DF726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 564D64A02A5F1A58007DF726 /* LaunchScreen.storyboard */; };
+		56A1063D2A8171580076FA99 /* CardInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A1063C2A8171580076FA99 /* CardInfoViewController.swift */; };
 		56A62BF02A5F2990003803DF /* gradiantExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62BEF2A5F2990003803DF /* gradiantExtension.swift */; };
 		56A62BF22A606115003803DF /* GradiantColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62BF12A606115003803DF /* GradiantColorExtensions.swift */; };
 		56A62BF52A6075AB003803DF /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62BF42A6075AB003803DF /* RegistrationController.swift */; };
@@ -52,6 +55,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		561741E52A7F72CA00A236A9 /* ExchangeCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeCurrency.swift; sourceTree = "<group>"; };
+		561741E72A7F956200A236A9 /* ExchangeCurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeCurrencyView.swift; sourceTree = "<group>"; };
 		564D64922A5F1A57007DF726 /* EuroExchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EuroExchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		564D64952A5F1A57007DF726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		564D64972A5F1A57007DF726 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +64,7 @@
 		564D649E2A5F1A58007DF726 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		564D64A12A5F1A58007DF726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		564D64A32A5F1A58007DF726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56A1063C2A8171580076FA99 /* CardInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfoViewController.swift; sourceTree = "<group>"; };
 		56A62BEF2A5F2990003803DF /* gradiantExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gradiantExtension.swift; sourceTree = "<group>"; };
 		56A62BF12A606115003803DF /* GradiantColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradiantColorExtensions.swift; sourceTree = "<group>"; };
 		56A62BF42A6075AB003803DF /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
@@ -251,6 +257,8 @@
 			isa = PBXGroup;
 			children = (
 				56A62C3C2A764D10003803DF /* AddNewCardViewController.swift */,
+				561741E52A7F72CA00A236A9 /* ExchangeCurrency.swift */,
+				56A1063C2A8171580076FA99 /* CardInfoViewController.swift */,
 			);
 			path = CardViewControllers;
 			sourceTree = "<group>";
@@ -259,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				56A62C3F2A76697A003803DF /* CardView.swift */,
+				561741E72A7F956200A236A9 /* ExchangeCurrencyView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -358,9 +367,11 @@
 				564D649A2A5F1A57007DF726 /* WelcomeViewContorller.swift in Sources */,
 				56A62C2B2A72598F003803DF /* WelcomeToExchangeViewController.swift in Sources */,
 				56A62C3D2A764D10003803DF /* AddNewCardViewController.swift in Sources */,
+				561741E82A7F956200A236A9 /* ExchangeCurrencyView.swift in Sources */,
 				56A62BF02A5F2990003803DF /* gradiantExtension.swift in Sources */,
 				56A62C402A76697A003803DF /* CardView.swift in Sources */,
 				564D64962A5F1A57007DF726 /* AppDelegate.swift in Sources */,
+				561741E62A7F72CA00A236A9 /* ExchangeCurrency.swift in Sources */,
 				56A62C362A7632B9003803DF /* ErrorViewController.swift in Sources */,
 				56A62C2F2A72600E003803DF /* PaddingLabel.swift in Sources */,
 				56A62C292A642F67003803DF /* WecomePageViewCobtroller.swift in Sources */,
@@ -370,6 +381,7 @@
 				56A62C202A63F444003803DF /* LoginAndEmailViewController.swift in Sources */,
 				56A62BF52A6075AB003803DF /* RegistrationController.swift in Sources */,
 				56A62C222A63F4F3003803DF /* PasswordChangedViewController.swift in Sources */,
+				56A1063D2A8171580076FA99 /* CardInfoViewController.swift in Sources */,
 				56A62C2D2A725A73003803DF /* TermsAndConditionsViewController.swift in Sources */,
 				564D64982A5F1A57007DF726 /* SceneDelegate.swift in Sources */,
 				56A62C312A7536F8003803DF /* CheckBoxButton.swift in Sources */,
