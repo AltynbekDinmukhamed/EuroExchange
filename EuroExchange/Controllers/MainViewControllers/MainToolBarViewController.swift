@@ -26,11 +26,12 @@ class MainToolBarViewController: UITabBarController {
     
     //MARK: -Functions-
     private func generateToolBar() {
+        let home = createNav(with: "home", and: UIImage(systemName: "house"), vc: HomeViewController())
         let firstViews = createNav(with: "Home", and: UIImage(systemName: "house"), vc: AddNewCardViewController())
         let secoundView = createNav(with: "Exchange", and: UIImage(named: "Exhangelogo"), vc: ExchangeCurrency())
         let thirdView = createNav(with: "Card info", and: UIImage(systemName: "house"), vc: CardInfoViewController())
         
-        setViewControllers([firstViews, secoundView, thirdView], animated: true)
+        setViewControllers([home, firstViews, secoundView, thirdView], animated: true)
     }
     
     private func createNav(with title: String, and image: UIImage?, vc: UIViewController) -> UINavigationController {
