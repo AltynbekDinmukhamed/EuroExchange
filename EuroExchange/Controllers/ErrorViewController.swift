@@ -73,7 +73,7 @@ class ErrorViewController: UIViewController {
     }
     
     @objc func timerVcOpen(){
-        let vc = AddNewCardViewController()
+        let vc = MainToolBarViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
