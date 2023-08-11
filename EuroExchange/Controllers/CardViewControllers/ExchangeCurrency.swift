@@ -128,7 +128,8 @@ class ExchangeCurrency: UIViewController {
     
     //MARK: -objc funcitons-
     @objc func settingTapped(_ sender: UIButton) {
-        
+        let vc = SettingViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func changeExchangeButtonTapped(_ sender: UIButton) {

@@ -18,12 +18,12 @@ class AddNewCardViewController: UIViewController {
         return lbl
     }()
     
-    let settingImg: UIImageView = {
-        let img = UIImageView()
-        img.image = UIImage(named: "settings")
-        img.contentMode = .scaleAspectFit
-        img.translatesAutoresizingMaskIntoConstraints = false
-        return img
+    lazy var setUpButton: UIButton = {
+        let btn = UIButton()
+        btn.setImage(UIImage(named: "settings"), for: .normal)
+        btn.addTarget(self, action: #selector(settingTapped), for: .touchUpInside)
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        return btn
     }()
     
     let cardViews: CardView = {
@@ -126,12 +126,12 @@ class AddNewCardViewController: UIViewController {
             addNewCard.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 23),
             addNewCard.centerXAnchor.constraint(equalTo: view.centerXAnchor),
         ])
-        view.addSubview(settingImg)
+        view.addSubview(setUpButton)
         NSLayoutConstraint.activate([
-            settingImg.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 21),
-            settingImg.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -28),
-            settingImg.widthAnchor.constraint(equalToConstant: 24),
-            settingImg.heightAnchor.constraint(equalToConstant: 24),
+            setUpButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 3),
+            setUpButton.trailingAnchor.constraint(equalTo: view.trailingAnchor , constant: -28),
+            setUpButton.widthAnchor.constraint(equalToConstant: 24),
+            setUpButton.heightAnchor.constraint(equalToConstant: 24),
         ])
         view?.addSubview(cardViews)
         NSLayoutConstraint.activate([
@@ -188,9 +188,14 @@ class AddNewCardViewController: UIViewController {
             saveButton.heightAnchor.constraint(equalToConstant: 41),
         ])
     }
-    
+    //MARK: -Objc functions-
     @objc func saveTapped(_ sender: UIButton) {
         
+    }
+    
+    @objc func settingTapped(_ sender: UIButton) {
+        let vc = SettingViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

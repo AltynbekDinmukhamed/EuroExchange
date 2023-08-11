@@ -101,7 +101,8 @@ class CardInfoViewController: UIViewController {
     }
     
     @objc func settingTapped(_ sender: UIButton) {
-        
+        let vc = SettingViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
