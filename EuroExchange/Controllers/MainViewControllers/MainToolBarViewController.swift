@@ -29,7 +29,7 @@ class MainToolBarViewController: UITabBarController {
         let home = createNav(with: "home", and: UIImage(systemName: "house"), vc: HomeViewController())
         let firstViews = createNav(with: "Home", and: UIImage(systemName: "house"), vc: AddNewCardViewController())
         let secoundView = createNav(with: "Exchange", and: UIImage(named: "Exhangelogo"), vc: ExchangeCurrency())
-        let thirdView = createNav(with: "Card info", and: UIImage(systemName: "house"), vc: CardInfoViewController())
+        let thirdView = createNav(with: "Card info", and: UIImage(systemName: "creditcard"), vc: CardInfoViewController())
         
         setViewControllers([home, firstViews, secoundView, thirdView], animated: true)
     }

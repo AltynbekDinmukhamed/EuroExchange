@@ -177,7 +177,8 @@ class HomeViewController: UIViewController {
     
     //MARK: -objc func-
     @objc func settingTapped(_ sender: UIButton) {
-        
+        let vc = SettingViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func dollorBtnTapped(_ sender: UIButton) {

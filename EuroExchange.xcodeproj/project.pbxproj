@@ -18,6 +18,7 @@
 		56A1063F2A8173930076FA99 /* CardInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A1063E2A8173930076FA99 /* CardInfoView.swift */; };
 		56A106412A817B060076FA99 /* RecentTransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A106402A817B060076FA99 /* RecentTransactionTableViewCell.swift */; };
 		56A106432A84EEA90076FA99 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A106422A84EEA90076FA99 /* HomeViewController.swift */; };
+		56A106452A854D1D0076FA99 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A106442A854D1D0076FA99 /* SettingViewController.swift */; };
 		56A62BF02A5F2990003803DF /* gradiantExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62BEF2A5F2990003803DF /* gradiantExtension.swift */; };
 		56A62BF22A606115003803DF /* GradiantColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62BF12A606115003803DF /* GradiantColorExtensions.swift */; };
 		56A62BF52A6075AB003803DF /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62BF42A6075AB003803DF /* RegistrationController.swift */; };
@@ -71,6 +72,7 @@
 		56A1063E2A8173930076FA99 /* CardInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfoView.swift; sourceTree = "<group>"; };
 		56A106402A817B060076FA99 /* RecentTransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionTableViewCell.swift; sourceTree = "<group>"; };
 		56A106422A84EEA90076FA99 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		56A106442A854D1D0076FA99 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		56A62BEF2A5F2990003803DF /* gradiantExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gradiantExtension.swift; sourceTree = "<group>"; };
 		56A62BF12A606115003803DF /* GradiantColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradiantColorExtensions.swift; sourceTree = "<group>"; };
 		56A62BF42A6075AB003803DF /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 				561741E52A7F72CA00A236A9 /* ExchangeCurrency.swift */,
 				56A1063C2A8171580076FA99 /* CardInfoViewController.swift */,
 				56A106422A84EEA90076FA99 /* HomeViewController.swift */,
+				56A106442A854D1D0076FA99 /* SettingViewController.swift */,
 			);
 			path = CardViewControllers;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				56A62BF22A606115003803DF /* GradiantColorExtensions.swift in Sources */,
 				56A62C3A2A763B88003803DF /* MainToolBarViewController.swift in Sources */,
 				56A62C262A642C63003803DF /* PassViewController.swift in Sources */,
+				56A106452A854D1D0076FA99 /* SettingViewController.swift in Sources */,
 				56A62C202A63F444003803DF /* LoginAndEmailViewController.swift in Sources */,
 				56A106412A817B060076FA99 /* RecentTransactionTableViewCell.swift in Sources */,
 				56A62BF52A6075AB003803DF /* RegistrationController.swift in Sources */,
