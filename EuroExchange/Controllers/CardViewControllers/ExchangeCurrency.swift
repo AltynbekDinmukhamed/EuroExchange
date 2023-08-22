@@ -49,8 +49,10 @@ class ExchangeCurrency: UIViewController {
         exc.clipsToBounds = true
         exc.layer.cornerRadius = 10
         exc.amount.text = "80.000"
-        exc.dolorImage.image = UIImage(named: "rub")
+        exc.dolorImage.image = UIImage(named: "euro")
+        exc.dolorImage.tintColor = .gray
         exc.translatesAutoresizingMaskIntoConstraints = false
+        
         return exc
     }()
     
@@ -67,6 +69,8 @@ class ExchangeCurrency: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpViews()
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(changeMark))
+        secoundExchangeView.addGestureRecognizer(gesture)
     }
     
     override func viewDidLayoutSubviews() {
@@ -126,6 +130,10 @@ class ExchangeCurrency: UIViewController {
         ])
     }
     
+    private func change() {
+        
+    }
+    
     //MARK: -objc funcitons-
     @objc func settingTapped(_ sender: UIButton) {
         let vc = SettingViewController()
@@ -134,5 +142,25 @@ class ExchangeCurrency: UIViewController {
     
     @objc func changeExchangeButtonTapped(_ sender: UIButton) {
         
+    }
+    
+    @objc func changeMark(_ gesture: UITapGestureRecognizer) {
+        let optionMenu = UIAlertController(title: "Choose a mark", message: "You can choose one of this", preferredStyle: .actionSheet)
+        
+        let euroAction = UIAlertAction(title: "€", style: .default) { alert in
+            self.secoundExchangeView.dolorImage.image = UIImage(named: "euro")
+        }
+        
+        let fontSterling = UIAlertAction(title: "£", style: .default) { alert in
+            self.secoundExchangeView.dolorImage.image = UIImage(named: "font_sterling")
+        }
+        
+        let dolor = UIAlertAction(title: "$", style: .default) { alert in
+            self.secoundExchangeView.dolorImage.image = UIImage(named: "dollor")
+        }
+        optionMenu.addAction(euroAction)
+        optionMenu.addAction(fontSterling)
+        optionMenu.addAction(dolor)
+        self.present(optionMenu, animated: true)
     }
 }

@@ -10,7 +10,7 @@ import UIKit
 
 class ExchangeCurrencyView: UIView {
     //MARK: --
-    let amount: UILabel = {
+    var amount: UILabel = {
         let lbl = UILabel()
         lbl.text = "1.000"
         lbl.font = UIFont(name: "PlusJakartaSans-Bold", size: 32)
@@ -19,7 +19,7 @@ class ExchangeCurrencyView: UIView {
         return lbl
     }()
     
-    let dolorImage: UIImageView = {
+    var dolorImage: UIImageView = {
         let img = UIImageView()
         img.image = UIImage(named: "dollor")
         img.contentMode = .scaleAspectFit

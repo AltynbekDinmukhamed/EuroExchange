@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		561741E62A7F72CA00A236A9 /* ExchangeCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561741E52A7F72CA00A236A9 /* ExchangeCurrency.swift */; };
 		561741E82A7F956200A236A9 /* ExchangeCurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561741E72A7F956200A236A9 /* ExchangeCurrencyView.swift */; };
+		5648BE232A8C089400F516F8 /* PinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5648BE222A8C089400F516F8 /* PinCodeViewController.swift */; };
 		564D64962A5F1A57007DF726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564D64952A5F1A57007DF726 /* AppDelegate.swift */; };
 		564D64982A5F1A57007DF726 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564D64972A5F1A57007DF726 /* SceneDelegate.swift */; };
 		564D649A2A5F1A57007DF726 /* WelcomeViewContorller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564D64992A5F1A57007DF726 /* WelcomeViewContorller.swift */; };
 		564D649F2A5F1A58007DF726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 564D649E2A5F1A58007DF726 /* Assets.xcassets */; };
 		564D64A22A5F1A58007DF726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 564D64A02A5F1A58007DF726 /* LaunchScreen.storyboard */; };
+		568531242A925AB1009FE7DD /* pinCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568531232A925AB1009FE7DD /* pinCodeView.swift */; };
 		56A1063D2A8171580076FA99 /* CardInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A1063C2A8171580076FA99 /* CardInfoViewController.swift */; };
 		56A1063F2A8173930076FA99 /* CardInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A1063E2A8173930076FA99 /* CardInfoView.swift */; };
 		56A106412A817B060076FA99 /* RecentTransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A106402A817B060076FA99 /* RecentTransactionTableViewCell.swift */; };
@@ -63,6 +65,7 @@
 /* Begin PBXFileReference section */
 		561741E52A7F72CA00A236A9 /* ExchangeCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeCurrency.swift; sourceTree = "<group>"; };
 		561741E72A7F956200A236A9 /* ExchangeCurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeCurrencyView.swift; sourceTree = "<group>"; };
+		5648BE222A8C089400F516F8 /* PinCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeViewController.swift; sourceTree = "<group>"; };
 		564D64922A5F1A57007DF726 /* EuroExchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EuroExchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		564D64952A5F1A57007DF726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		564D64972A5F1A57007DF726 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +73,7 @@
 		564D649E2A5F1A58007DF726 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		564D64A12A5F1A58007DF726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		564D64A32A5F1A58007DF726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		568531232A925AB1009FE7DD /* pinCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pinCodeView.swift; sourceTree = "<group>"; };
 		56A1063C2A8171580076FA99 /* CardInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfoViewController.swift; sourceTree = "<group>"; };
 		56A1063E2A8173930076FA99 /* CardInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfoView.swift; sourceTree = "<group>"; };
 		56A106402A817B060076FA99 /* RecentTransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionTableViewCell.swift; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 				56A62BF32A607593003803DF /* AuthenticationControllers */,
 				56A62C342A763189003803DF /* WelcomeControllers */,
 				56A62C352A7632B9003803DF /* ErrorViewController.swift */,
+				5648BE222A8C089400F516F8 /* PinCodeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 				56A1063E2A8173930076FA99 /* CardInfoView.swift */,
 				56A106402A817B060076FA99 /* RecentTransactionTableViewCell.swift */,
 				56A106482A85F5990076FA99 /* littleCardsViews.swift */,
+				568531232A925AB1009FE7DD /* pinCodeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -388,6 +394,7 @@
 				56A62C2B2A72598F003803DF /* WelcomeToExchangeViewController.swift in Sources */,
 				56A62C3D2A764D10003803DF /* AddNewCardViewController.swift in Sources */,
 				561741E82A7F956200A236A9 /* ExchangeCurrencyView.swift in Sources */,
+				568531242A925AB1009FE7DD /* pinCodeView.swift in Sources */,
 				56A62BF02A5F2990003803DF /* gradiantExtension.swift in Sources */,
 				56A62C402A76697A003803DF /* CardView.swift in Sources */,
 				564D64962A5F1A57007DF726 /* AppDelegate.swift in Sources */,
@@ -398,6 +405,7 @@
 				56A106432A84EEA90076FA99 /* HomeViewController.swift in Sources */,
 				56A62C292A642F67003803DF /* WecomePageViewCobtroller.swift in Sources */,
 				56A62BF22A606115003803DF /* GradiantColorExtensions.swift in Sources */,
+				5648BE232A8C089400F516F8 /* PinCodeViewController.swift in Sources */,
 				56A62C3A2A763B88003803DF /* MainToolBarViewController.swift in Sources */,
 				56A62C262A642C63003803DF /* PassViewController.swift in Sources */,
 				56A106452A854D1D0076FA99 /* SettingViewController.swift in Sources */,

@@ -182,7 +182,8 @@ class HomeViewController: UIViewController {
     }
     
     @objc func dollorBtnTapped(_ sender: UIButton) {
-        
+        sender.applyButtonGradiant(color: [])
+        sender.backgroundColor = UIColor(red: 0.851, green: 0.851, blue: 0.918, alpha: 1)
     }
     
     @objc func euroBtnTapped(_ sender: UIButton) {
