@@ -10,6 +10,7 @@ import UIKit
 
 protocol openVC {
     func openVC(vc: UIViewController)
+    func sendCode(code: [Int])
 }
 
 class pinCodeView: UIView {
@@ -191,9 +192,15 @@ class pinCodeView: UIView {
     
     let deleateBtn: UIButton = {
         let btn = UIButton(frame: CGRect(x: 0, y: 0, width: 35, height: 33))
-        btn.setBackgroundImage(UIImage(systemName: "delete.left.fill"), for: .normal)
+        btn.setBackgroundImage(UIImage(named: "deleate"), for: .normal)
         btn.translatesAutoresizingMaskIntoConstraints = false
         return btn
+    }()
+    
+    let deleateView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
     }()
     
     //MARK: result
@@ -238,21 +245,25 @@ class pinCodeView: UIView {
         buttonStack.addArrangedSubview(fourthRowStack)
         fourthRowStack.addArrangedSubview(disaperView)
         fourthRowStack.addArrangedSubview(zeroButton)
-        fourthRowStack.addArrangedSubview(deleateBtn)
+        fourthRowStack.addArrangedSubview(deleateView)
+        deleateView.addSubview(deleateBtn)
         NSLayoutConstraint.activate([
+            deleateBtn.centerXAnchor.constraint(equalTo: deleateView.centerXAnchor),
+            deleateBtn.centerYAnchor.constraint(equalTo: deleateView.centerYAnchor),
             deleateBtn.widthAnchor.constraint(equalToConstant: 35),
             deleateBtn.heightAnchor.constraint(equalToConstant: 33)
         ])
     }
-    
+    // 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
     //MARK: -Actions-
     @objc func btnTapped(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
-
+        
         if (sender.isSelected){
             sender.backgroundColor = UIColor.gray
             Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { timer in
                 sender.backgroundColor = UIColor.white
+                sender.isSelected = false
             }
         } else {
             sender.backgroundColor = UIColor.white
@@ -262,6 +273,7 @@ class pinCodeView: UIView {
         pin.append(value)
         if pin.count == 4 {
             let vc = MainToolBarViewController()
+            self.delegate?.sendCode(code: self.pin)
             delegate?.openVC(vc: vc)
         }
     }

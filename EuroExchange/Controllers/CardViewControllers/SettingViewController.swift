@@ -88,9 +88,9 @@ class SettingViewController: UIViewController {
         return btn
     }()
     
-    let setting5: UIButton = {
+    lazy var setting5: UIButton = {
         let btn = UIButton()
-        btn.setTitle("Setting 1                                       ", for: .normal)
+        btn.setTitle("Log out                                       ", for: .normal)
         btn.layer.cornerRadius = 10
         btn.layer.borderWidth = 3
         btn.layer.borderColor = UIColor(red: 0.247, green: 0.255, blue: 0.58, alpha: 0.2).cgColor
@@ -100,6 +100,7 @@ class SettingViewController: UIViewController {
         btn.setTitleColor(.textBlue, for: .normal)
         btn.titleLabel?.textAlignment = .justified
         btn.translatesAutoresizingMaskIntoConstraints = false
+        btn.addTarget(self, action: #selector(logOutTapped), for: .touchUpInside)
         return btn
     }()
     
@@ -111,6 +112,7 @@ class SettingViewController: UIViewController {
     
     let rightView: UIView = {
         let view = UIView()
+        
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -167,5 +169,12 @@ class SettingViewController: UIViewController {
         stack.addArrangedSubview(setting3)
         stack.addArrangedSubview(setting4)
         stack.addArrangedSubview(setting5)
+    }
+    
+    @objc func logOutTapped(_ sender: UIButton) {
+        UserDefaults.standard.bool(forKey: "isUserLoggedIn")
+        UserDefaults.standard.synchronize()
+        
+        navigationController?.pushViewController(CreateAccountViewController(), animated: true)
     }
 }

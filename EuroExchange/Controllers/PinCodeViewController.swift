@@ -31,34 +31,7 @@ class PinCodeViewController: UIViewController, openVC {
     
     let firstStartText: UILabel = {
         let lbl = UILabel()
-        lbl.text = "*"
-        lbl.textColor = .textBlue
-        lbl.font = UIFont(name: "PlusJakartaSans-Bold", size: 48)
-        lbl.translatesAutoresizingMaskIntoConstraints = false
-        return lbl
-    }()
-    
-    let secoundStartText: UILabel = {
-        let lbl = UILabel()
-        lbl.text = "*"
-        lbl.textColor = .textBlue
-        lbl.font = UIFont(name: "PlusJakartaSans-Bold", size: 48)
-        lbl.translatesAutoresizingMaskIntoConstraints = false
-        return lbl
-    }()
-    
-    let thirdStartText: UILabel = {
-        let lbl = UILabel()
-        lbl.text = "*"
-        lbl.textColor = .textBlue
-        lbl.font = UIFont(name: "PlusJakartaSans-Bold", size: 48)
-        lbl.translatesAutoresizingMaskIntoConstraints = false
-        return lbl
-    }()
-    
-    let fourStartText: UILabel = {
-        let lbl = UILabel()
-        lbl.text = "*"
+        lbl.text = "****"
         lbl.textColor = .textBlue
         lbl.font = UIFont(name: "PlusJakartaSans-Bold", size: 48)
         lbl.translatesAutoresizingMaskIntoConstraints = false
@@ -70,9 +43,12 @@ class PinCodeViewController: UIViewController, openVC {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    
+    var realPinCode = [String]()
     //MARK: -Variables
     override func viewDidLoad() {
         super.viewDidLoad()
+        firstStartText.addCharacterSpacing(kernValue: 28)
         setUpViews()
         pinCode.delegate = self
     }
@@ -91,13 +67,10 @@ class PinCodeViewController: UIViewController, openVC {
         NSLayoutConstraint.activate([
             starStack.topAnchor.constraint(equalTo: logoImage.bottomAnchor, constant: 97),
             starStack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 94),
-            starStack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -94),
+            starStack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -84),
             starStack.heightAnchor.constraint(equalToConstant: 72),
         ])
         starStack.addArrangedSubview(firstStartText)
-        starStack.addArrangedSubview(secoundStartText)
-        starStack.addArrangedSubview(thirdStartText)
-        starStack.addArrangedSubview(fourStartText)
         
         //MARK: main button stack
         view.addSubview(pinCode)
@@ -111,5 +84,15 @@ class PinCodeViewController: UIViewController, openVC {
     
     func openVC(vc: UIViewController) {
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func sendCode(code: [Int]) {
+        for i in code {
+            firstStartText.text = String(i)
+        }
+        
+//        if realPinCode.isEmpty == false {
+//            firstStartText.text = realPinCode
+//        }
     }
 }

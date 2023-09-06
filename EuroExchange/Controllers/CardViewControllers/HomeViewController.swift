@@ -109,6 +109,7 @@ class HomeViewController: UIViewController {
         amountMoneyLbl.textColor = UIColor(patternImage: gradient)
         
         dollorBtn.applyButtonGradiant(color: [UIColor.blueSecound, UIColor.blueFirst])
+        euroBtnTapped(euroBtn)
         MoreButton.applyButtonGradiant(color: [UIColor.blueSecound, UIColor.blueFirst])
     }
     //MARK: -functions-
@@ -182,12 +183,38 @@ class HomeViewController: UIViewController {
     }
     
     @objc func dollorBtnTapped(_ sender: UIButton) {
-        sender.applyButtonGradiant(color: [])
-        sender.backgroundColor = UIColor(red: 0.851, green: 0.851, blue: 0.918, alpha: 1)
+        sender.isSelected = !sender.isSelected
+        
+        if sender.isSelected {
+            DispatchQueue.main.async {
+                self.dollorBtn.applyButtonGradiant(color: [UIColor.blueSecound, UIColor.blueFirst])
+            }
+            sender.isSelected = false
+            
+        } else {
+            //sender.isSelected = !sender.isSelected
+            dollorBtn.backgroundColor = .gray
+            dollorBtn.applyButtonGradiant(color: [UIColor.gray.cgColor])
+            sender.isSelected = !sender.isSelected
+            print(sender.isSelected)
+        }
+        
     }
     
     @objc func euroBtnTapped(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
         
+        if sender.isSelected {
+            dollorBtn.applyButtonGradiant(color: [UIColor.blueSecound, UIColor.blueFirst])
+            sender.isSelected = false
+            
+        } else {
+            //sender.isSelected = !sender.isSelected
+            dollorBtn.backgroundColor = .gray
+            dollorBtn.applyButtonGradiant(color: [UIColor.gray.cgColor])
+            sender.isSelected = !sender.isSelected
+            print(sender.isSelected)
+        }
     }
     
     @objc func fountBtnTapped(_ sednder: UIButton) {

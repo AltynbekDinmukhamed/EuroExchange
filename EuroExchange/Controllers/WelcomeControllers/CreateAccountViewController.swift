@@ -33,7 +33,7 @@ class CreateAccountViewController: UIViewController {
         btn.setTitleColor(.white, for: .normal)
         btn.layer.cornerRadius = 10
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.addTarget(self, action: #selector(passwordButtonTapped), for: .touchUpInside)
+        btn.addTarget(self, action: #selector(loginBtnTapped), for: .touchUpInside)
         btn.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.33)
         return btn
     }()
@@ -44,7 +44,7 @@ class CreateAccountViewController: UIViewController {
         btn.setTitleColor(.white, for: .normal)
         btn.layer.cornerRadius = 10
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
+        btn.addTarget(self, action: #selector(createButtonTapped), for: .touchUpInside)
         btn.backgroundColor = .systemOrange
         return btn
     }()
@@ -98,16 +98,13 @@ class CreateAccountViewController: UIViewController {
         ])
     }
     
-    @objc private func accIDButtonTapped(_ sender: UIButton) {
-        
+    @objc private func createButtonTapped(_ sender: UIButton) {
+        let vc = RegistrationController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
-    @objc private func passwordButtonTapped(_ sender: UIButton) {
-        
-    }
-    
-    @objc private func nextButtonTapped(_ sender: UIButton) {
-        let vc = PassViewController()
+    @objc private func loginBtnTapped(_ sender: UIButton) {
+        let vc = EnterLoginViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
