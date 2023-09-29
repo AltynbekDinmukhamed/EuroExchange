@@ -94,8 +94,9 @@ class CreateAccountViewController: UIViewController {
             logInButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
             logInButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
             logInButton.heightAnchor.constraint(equalToConstant: 50),
-            
         ])
+        
+        
     }
     
     @objc private func createButtonTapped(_ sender: UIButton) {

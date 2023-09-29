@@ -51,6 +51,7 @@ class EnterRegistrationViewController: UIViewController {
         txt.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
         txt.translatesAutoresizingMaskIntoConstraints = false
         txt.textAlignment = .center
+        txt.autocapitalizationType = .none
         return txt
     }()
     
@@ -69,6 +70,7 @@ class EnterRegistrationViewController: UIViewController {
         txt.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
         txt.translatesAutoresizingMaskIntoConstraints = false
         txt.textAlignment = .center
+        txt.autocapitalizationType = .none
         return txt
     }()
     
@@ -87,6 +89,7 @@ class EnterRegistrationViewController: UIViewController {
         txt.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
         txt.translatesAutoresizingMaskIntoConstraints = false
         txt.textAlignment = .center
+        txt.autocapitalizationType = .none
         return txt
     }()
     
@@ -109,6 +112,8 @@ class EnterRegistrationViewController: UIViewController {
         btn.addTarget(self, action: #selector(haveAccountTapped), for: .touchUpInside)
         return btn
     }()
+    
+    var ReigUser: User? = nil
     
     //MARK: -LifeCycle-
     override func viewDidLoad() {
@@ -193,21 +198,80 @@ class EnterRegistrationViewController: UIViewController {
             return
         }
         
+        let newUser = User(login: userEmail, password: userRepeatPassword)
+        ReigUser = newUser
+        
         //store data
-        UserDefaults.standard.set(userEmail, forKey: "userEmail")
-        UserDefaults.standard.set(userPassword, forKey: "userPassword")
-        UserDefaults.standard.synchronize()
+//        UserDefaults.standard.set(userEmail, forKey: "userEmail")
+//        UserDefaults.standard.set(userPassword, forKey: "userPassword")
+//        UserDefaults.standard.synchronize()
 
         //display alert message
-        let myAlert = UIAlertController(title: "Alert", message: "Registration is succsesfull. Thank you!", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default) { action in
-            self.navigationController?.pushViewController(MainToolBarViewController(), animated: true)
-        }
-        myAlert.addAction(okAction)
-        present(myAlert, animated: true)
+//        let myAlert = UIAlertController(title: "Alert", message: "Registration is succsesfull. Thank you!", preferredStyle: .alert)
+//        let okAction = UIAlertAction(title: "OK", style: .default) { action in
+//            self.navigationController?.pushViewController(MainToolBarViewController(), animated: true)
+//        }
+//        myAlert.addAction(okAction)
+//        present(myAlert, animated: true)
+        
+        
+        registerUser()
+        
     }
+    
     @objc func haveAccountTapped(_ sender: UIButton) {
         let vc = EnterLoginViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
+    // MARK: -functions-
+    private func registerUser() {
+        let url = URL(string: "https://api-test-123.exch.tech/api/v1/login")
+        guard let url else { return }
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        do {
+            let json = try JSONEncoder().encode(ReigUser)
+            request.httpBody = json
+            print("ENCODING: \(String(describing: ReigUser))")
+            print("REQUEST: ", request)
+            print("JSON: ", json)
+        }catch {
+            print("Catch error: \(error)")
+        }
+        
+        
+        // Session
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            DispatchQueue.main.async {
+                if let error = error {
+                    print("Erorr: \(error)")
+                    return
+                }
+
+                if let httpResponse = response as? HTTPURLResponse {
+                    print("Code Status: \(httpResponse.description)")
+
+                    guard let data = data else { return }
+                    do {
+                        //let user = try JSONDecoder().decode([LoginAuthMessage]., from: data)
+                        //print("fetching data", user)
+                        
+                    }catch {
+                        print("Error \(error.localizedDescription)")
+
+                    }
+                }
+            }
+        }
+        task.resume()
+    }
+}
+
+extension EnterLoginViewController {
+    
+    
+    
 }

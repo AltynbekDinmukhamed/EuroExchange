@@ -75,7 +75,7 @@ class SettingViewController: UIViewController {
     
     let setting4: UIButton = {
         let btn = UIButton()
-        btn.setTitle("Setting 1                                       ", for: .normal)
+        btn.setTitle("Setting 1", for: .normal)
         btn.layer.cornerRadius = 10
         btn.layer.borderWidth = 3
         btn.layer.borderColor = UIColor(red: 0.247, green: 0.255, blue: 0.58, alpha: 0.2).cgColor
@@ -129,6 +129,7 @@ class SettingViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        
         leftView.applyCardGradiant(color: [UIColor.blueFirst, UIColor.blueSecound])
         rightView.applyCardGradiant(color: [UIColor.blueFirst, UIColor.blueSecound])
     }

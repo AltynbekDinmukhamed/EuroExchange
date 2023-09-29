@@ -51,6 +51,7 @@ class EnterLoginViewController: UIViewController {
         txt.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
         txt.translatesAutoresizingMaskIntoConstraints = false
         txt.textAlignment = .center
+        txt.autocapitalizationType = .none
         return txt
     }()
     
@@ -69,6 +70,7 @@ class EnterLoginViewController: UIViewController {
         txt.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
         txt.translatesAutoresizingMaskIntoConstraints = false
         txt.textAlignment = .center
+        txt.autocapitalizationType = .none
         return txt
     }()
     
@@ -91,6 +93,8 @@ class EnterLoginViewController: UIViewController {
         btn.addTarget(self, action: #selector(registerTapped), for: .touchUpInside)
         return btn
     }()
+    
+    var conUser: User? = nil
     
     //MARK: -LifeCycle-
     override func viewDidLoad() {
@@ -151,21 +155,19 @@ class EnterLoginViewController: UIViewController {
         guard let userEmail = loginInput.text else { return }
         guard let userPassword = passwordInput.text else { return }
         
-        let userEmailStored = UserDefaults.standard.string(forKey: "userEmail")
-        let userPasswordStored = UserDefaults.standard.string(forKey: "userPassword")
+        let user = User(login: userEmail, password: userPassword)
+        conUser = user
         
-        if userEmailStored == userEmail {
-            if userPasswordStored == userPassword {
-                //login sucsessfully
-                UserDefaults.standard.bool(forKey: "isUserLoggedIn")
-                UserDefaults.standard.synchronize()
-                navigationController?.pushViewController(MainToolBarViewController(), animated: true)
+        
+        ServerSession.shared.authenticateUser(user: conUser!) { res in
+            switch res {
+            case .success:
+                DispatchQueue.main.async {
+                    self.navigationController?.pushViewController(MainToolBarViewController(), animated: true)
+                }
+            case .failure(let error):
+                print("Error while login: \(error)")
             }
-        } else {
-            let alert = UIAlertController(title: "Error", message: "Something wrong", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "Ok", style: .default)
-            alert.addAction(okAction)
-            self.present(alert, animated: true)
         }
     }
     

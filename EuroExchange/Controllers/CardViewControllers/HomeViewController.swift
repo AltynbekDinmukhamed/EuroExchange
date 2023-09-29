@@ -50,7 +50,6 @@ class HomeViewController: UIViewController {
         btn.titleLabel?.font = UIFont(name: "PlusJakartaSans-Bold", size: 36)
         btn.layer.cornerRadius = 35
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.backgroundColor = UIColor(red: 0.851, green: 0.851, blue: 0.918, alpha: 1)
         btn.setTitleColor(.textBlue, for: .normal)
         btn.addTarget(self, action: #selector(euroBtnTapped), for: .touchUpInside)
         return btn
@@ -60,7 +59,6 @@ class HomeViewController: UIViewController {
         let btn = UIButton()
         btn.setTitle("£", for: .normal)
         btn.titleLabel?.font = UIFont(name: "PlusJakartaSans-Bold", size: 36)
-        btn.backgroundColor = UIColor(red: 0.851, green: 0.851, blue: 0.918, alpha: 1)
         btn.setTitleColor(.textBlue, for: .normal)
         btn.layer.cornerRadius = 35
         btn.translatesAutoresizingMaskIntoConstraints = false
@@ -108,14 +106,17 @@ class HomeViewController: UIViewController {
         let gradient = UIImage.gradientImage(bounds: amountMoneyLbl.bounds, colors: [UIColor.textBlue, UIColor.textBlueSecound])
         amountMoneyLbl.textColor = UIColor(patternImage: gradient)
         
-        dollorBtn.applyButtonGradiant(color: [UIColor.blueSecound, UIColor.blueFirst])
-        euroBtnTapped(euroBtn)
+//        dollorBtn.applyButtonGradiant(color: [UIColor.blueSecound, UIColor.blueFirst])
+//        euroBtnTapped(euroBtn)
         MoreButton.applyButtonGradiant(color: [UIColor.blueSecound, UIColor.blueFirst])
     }
     //MARK: -functions-
     private func setUpVeiws() {
         navigationController?.isNavigationBarHidden = true
         view.backgroundColor = .white
+        
+        reset()
+        
         view.addSubview(welcomeBackLbl)
         NSLayoutConstraint.activate([
             welcomeBackLbl.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 3),
@@ -127,6 +128,7 @@ class HomeViewController: UIViewController {
             setUpButton.trailingAnchor.constraint(equalTo: view.trailingAnchor , constant: -28),
             setUpButton.widthAnchor.constraint(equalToConstant: 24),
             setUpButton.heightAnchor.constraint(equalToConstant: 24),
+            
         ])
         view.addSubview(amountMoneyLbl)
         NSLayoutConstraint.activate([
@@ -182,47 +184,31 @@ class HomeViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
-    @objc func dollorBtnTapped(_ sender: UIButton) {
-        sender.isSelected = !sender.isSelected
-        
-        if sender.isSelected {
-            DispatchQueue.main.async {
-                self.dollorBtn.applyButtonGradiant(color: [UIColor.blueSecound, UIColor.blueFirst])
-            }
-            sender.isSelected = false
-            
-        } else {
-            //sender.isSelected = !sender.isSelected
-            dollorBtn.backgroundColor = .gray
-            dollorBtn.applyButtonGradiant(color: [UIColor.gray.cgColor])
-            sender.isSelected = !sender.isSelected
-            print(sender.isSelected)
+    private func reset() {
+        [dollorBtn, euroBtn, fountBtn].forEach { button in
+            button.backgroundColor = .gray
         }
-        
+    }
+    
+    @objc func dollorBtnTapped(_ sender: UIButton) {
+        reset()
+        sender.backgroundColor = .blue
     }
     
     @objc func euroBtnTapped(_ sender: UIButton) {
-        sender.isSelected = !sender.isSelected
-        
-        if sender.isSelected {
-            dollorBtn.applyButtonGradiant(color: [UIColor.blueSecound, UIColor.blueFirst])
-            sender.isSelected = false
-            
-        } else {
-            //sender.isSelected = !sender.isSelected
-            dollorBtn.backgroundColor = .gray
-            dollorBtn.applyButtonGradiant(color: [UIColor.gray.cgColor])
-            sender.isSelected = !sender.isSelected
-            print(sender.isSelected)
-        }
+        reset()
+        sender.backgroundColor = .blue
+    
     }
     
-    @objc func fountBtnTapped(_ sednder: UIButton) {
-        
+    @objc func fountBtnTapped(_ sender: UIButton) {
+        reset()
+        sender.backgroundColor = .blue
     }
     
     @objc func moreButtonTapped(_ sender: UIButton) {
-        
+        reset()
+        sender.backgroundColor = .blue
     }
 }
 

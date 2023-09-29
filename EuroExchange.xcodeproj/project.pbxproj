@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		561741E62A7F72CA00A236A9 /* ExchangeCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561741E52A7F72CA00A236A9 /* ExchangeCurrency.swift */; };
 		561741E82A7F956200A236A9 /* ExchangeCurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561741E72A7F956200A236A9 /* ExchangeCurrencyView.swift */; };
+		56295C162AC1A6EE00A124FC /* LoginMessageOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56295C152AC1A6EE00A124FC /* LoginMessageOutput.swift */; };
 		5648BE232A8C089400F516F8 /* PinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5648BE222A8C089400F516F8 /* PinCodeViewController.swift */; };
 		564D64962A5F1A57007DF726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564D64952A5F1A57007DF726 /* AppDelegate.swift */; };
 		564D64982A5F1A57007DF726 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564D64972A5F1A57007DF726 /* SceneDelegate.swift */; };
@@ -27,6 +28,7 @@
 		56A106452A854D1D0076FA99 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A106442A854D1D0076FA99 /* SettingViewController.swift */; };
 		56A106472A85F2DF0076FA99 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A106462A85F2DF0076FA99 /* CardsViewController.swift */; };
 		56A106492A85F5990076FA99 /* littleCardsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A106482A85F5990076FA99 /* littleCardsViews.swift */; };
+		56A4DC632ABC1AE00018E074 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A4DC622ABC1AE00018E074 /* User.swift */; };
 		56A62BF02A5F2990003803DF /* gradiantExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62BEF2A5F2990003803DF /* gradiantExtension.swift */; };
 		56A62BF22A606115003803DF /* GradiantColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62BF12A606115003803DF /* GradiantColorExtensions.swift */; };
 		56A62BF52A6075AB003803DF /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62BF42A6075AB003803DF /* RegistrationController.swift */; };
@@ -64,11 +66,13 @@
 		56A62C482A769951003803DF /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56A62C462A769951003803DF /* Poppins-SemiBold.ttf */; };
 		56A62C492A769951003803DF /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56A62C472A769951003803DF /* Poppins-Medium.ttf */; };
 		56A62C4B2A769C67003803DF /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56A62C4A2A769C67003803DF /* Poppins-Regular.ttf */; };
+		56AF07422AC56DA000D547AC /* ServerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AF07412AC56DA000D547AC /* ServerSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		561741E52A7F72CA00A236A9 /* ExchangeCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeCurrency.swift; sourceTree = "<group>"; };
 		561741E72A7F956200A236A9 /* ExchangeCurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeCurrencyView.swift; sourceTree = "<group>"; };
+		56295C152AC1A6EE00A124FC /* LoginMessageOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMessageOutput.swift; sourceTree = "<group>"; };
 		5648BE222A8C089400F516F8 /* PinCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeViewController.swift; sourceTree = "<group>"; };
 		564D64922A5F1A57007DF726 /* EuroExchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EuroExchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		564D64952A5F1A57007DF726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 		56A106442A854D1D0076FA99 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		56A106462A85F2DF0076FA99 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		56A106482A85F5990076FA99 /* littleCardsViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = littleCardsViews.swift; sourceTree = "<group>"; };
+		56A4DC622ABC1AE00018E074 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		56A62BEF2A5F2990003803DF /* gradiantExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gradiantExtension.swift; sourceTree = "<group>"; };
 		56A62BF12A606115003803DF /* GradiantColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradiantColorExtensions.swift; sourceTree = "<group>"; };
 		56A62BF42A6075AB003803DF /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
@@ -126,6 +131,7 @@
 		56A62C462A769951003803DF /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		56A62C472A769951003803DF /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		56A62C4A2A769C67003803DF /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		56AF07412AC56DA000D547AC /* ServerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +164,7 @@
 		564D64942A5F1A57007DF726 /* EuroExchange */ = {
 			isa = PBXGroup;
 			children = (
+				56AF07402AC56D8F00D547AC /* Sessions */,
 				5685314B2AA71252009FE7DD /* Model */,
 				56A62C3E2A76696D003803DF /* Views */,
 				56A62BEE2A5F297A003803DF /* Extension */,
@@ -206,6 +213,8 @@
 			isa = PBXGroup;
 			children = (
 				5685314C2AA71268009FE7DD /* CardUserData.swift */,
+				56A4DC622ABC1AE00018E074 /* User.swift */,
+				56295C152AC1A6EE00A124FC /* LoginMessageOutput.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -316,6 +325,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		56AF07402AC56D8F00D547AC /* Sessions */ = {
+			isa = PBXGroup;
+			children = (
+				56AF07412AC56DA000D547AC /* ServerSession.swift */,
+			);
+			path = Sessions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -421,6 +438,7 @@
 				564D64962A5F1A57007DF726 /* AppDelegate.swift in Sources */,
 				56A106472A85F2DF0076FA99 /* CardsViewController.swift in Sources */,
 				561741E62A7F72CA00A236A9 /* ExchangeCurrency.swift in Sources */,
+				56AF07422AC56DA000D547AC /* ServerSession.swift in Sources */,
 				56A62C362A7632B9003803DF /* ErrorViewController.swift in Sources */,
 				56A62C2F2A72600E003803DF /* PaddingLabel.swift in Sources */,
 				56A106432A84EEA90076FA99 /* HomeViewController.swift in Sources */,
@@ -428,6 +446,7 @@
 				56A62BF22A606115003803DF /* GradiantColorExtensions.swift in Sources */,
 				5648BE232A8C089400F516F8 /* PinCodeViewController.swift in Sources */,
 				56A62C3A2A763B88003803DF /* MainToolBarViewController.swift in Sources */,
+				56A4DC632ABC1AE00018E074 /* User.swift in Sources */,
 				56A62C262A642C63003803DF /* PassViewController.swift in Sources */,
 				56A106452A854D1D0076FA99 /* SettingViewController.swift in Sources */,
 				568531752AA78D51009FE7DD /* EnterRegistrationViewController.swift in Sources */,
@@ -435,6 +454,7 @@
 				568531262A975550009FE7DD /* LabelSpacingLetters.swift in Sources */,
 				5685314D2AA71268009FE7DD /* CardUserData.swift in Sources */,
 				56A106412A817B060076FA99 /* RecentTransactionTableViewCell.swift in Sources */,
+				56295C162AC1A6EE00A124FC /* LoginMessageOutput.swift in Sources */,
 				56A62BF52A6075AB003803DF /* RegistrationController.swift in Sources */,
 				56A62C222A63F4F3003803DF /* PasswordChangedViewController.swift in Sources */,
 				56A1063D2A8171580076FA99 /* CardInfoViewController.swift in Sources */,
